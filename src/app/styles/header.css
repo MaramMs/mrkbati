@@ -1,0 +1,66 @@
+
+
+.nav-link.item{
+    font-weight: 600!important;
+    font-size: 16px !important;
+    color: var(--colorSecondary) !important;
+}
+.nav-link.item.active{
+    color: var(--colorPrimary) !important;
+    font-weight: 500 !important;
+}
+#collapsible-nav-dropdown{
+    min-height: 42px;
+    min-width: 140px;
+    border-radius: 24px;
+    border: 1px solid #EFF0F6;
+    padding: 16px 9px;
+    display: flex !important;
+    justify-content: center !important;
+    gap:28px !important;
+    align-items: center !important;
+    color: #170F49;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Poppins';
+}
+.login{
+    min-width: 140px;
+    min-height: 48px;
+    border-radius: 4px;
+    padding: 14px 19px;
+    background-color: var(--colorPrimary) !important;
+    border: none !important;
+    color: var(--colorWhite) !important;
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+
+.signup{
+   background-color :#405189 !important;
+   border: none !important;
+   min-height: 53px;
+   min-width: 131px;
+   border-radius: 8px;
+   padding: 16px 24px;
+   color:#fff;
+   font-size: 14px;
+   font-weight: 500;
+}
+
+
+
+@media (min-width: 768px) {
+    .nav-right{
+align-items: center;
+    }
+    .nav-right div{
+    gap: 10px;
+    }
+    .list{
+        gap: 42px;
+        margin-left: 202px !important;
+        margin-right: auto;
+    }
+  }

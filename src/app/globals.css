@@ -3,7 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --colorPrimary:#25A7C7;
+  --colorSecondary:#1D1E25;
+  --colorWhite:#ffffff;
+  --colorBlack:#000000;
+  --colorGray:#848FAC;
 }
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
 
 @theme inline {
   --color-background: var(--background);
@@ -23,4 +33,46 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+/* p{
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--colorSecondary);
+} */
+
+
+.accordion{
+  --bs-accordion-border-color: none !important;
+  --bs-accordion-btn-bg: transparent !important;
+}
+
+.accordion-button:not(.collapsed){
+  background-color: transparent !important;
+  color: var(--colorPrimary) !important;
+  font-weight: 700 !important;
+  font-size: 24px !important;
+}
+.accordion-item{
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #1D1E25 !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+}
+
+
+.accordion-item .accordion-header .accordion-button {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 16px !important;
+}
+
+.accordion-button::after {
+  display: none !important;
+}
+
+.accordion-button:focus{
+  box-shadow: none !important;
 }
