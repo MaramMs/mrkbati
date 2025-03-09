@@ -1,19 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cairo } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const cairo = Cairo({ subsets: ["latin"], weight: ["300", "400", "700"] });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -24,6 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
       <body
+      className={cairo.className}
 >      
 
         <Header />
