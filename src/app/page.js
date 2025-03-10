@@ -14,45 +14,13 @@ export default function Home() {
        <Container>
 
        <Row>
-          {/* <Col
-            style={{
-              // background: `url('/assets/g12.png')`,
-              // backgroundSize: "cover",
-              // backgroundRepeat: "no-repeat",
-              // width: "100%",
-              // height: "100%",
-              // position: "relative",
-              // zIndex: "0",
-              // // opacity: "0.5",
-            }}
-          >
-
-           <Image
-              src="/assets/g12.png"
-              width={786}
-              height={728}
-              alt="image not found"
-              style={{ position: "relative", zIndex: "1" }}
-            />
-            <div className="white opacity-[0.5] w-full h-full absolute z-2">
-
-            </div>
-            <Image
-              src="/assets/sol.png"
-              width={584}
-              height={671}
-              alt="image not found"
-              style={{ position: "absolute", zIndex: "3" }}
-            />
-          </Col> */}
+        
 
 
 
-<Col className="relative w-full h-full">
-  {/* صورة الخلفية مع الشفافية */}
+<Col xs={12} md={6} className="relative w-full h-full">
   <div className="absolute inset-0 bg-white opacity-50 z-0"></div>
   
-  {/* صورة الخلفية */}
   <Image
     src="/assets/g12.png"
     width={786}
@@ -61,7 +29,6 @@ export default function Home() {
     className="absolute inset-0 w-full h-full object-cover z-1"
   />
 
-  {/* صورة الهاتف فوق الخلفية */}
   <Image
     src="/assets/sol.png"
     width={584}
@@ -72,43 +39,43 @@ export default function Home() {
 </Col>
 
 
-          <Col>
-            <h2 className="text-[#1D1E25] text-[35px] font-bold !mb-[10px]">
+          <Col xs={12} md={6}>
+            <h2 className="!text-[#1D1E25] !text-[20px] md:!text-[35px] !font-bold !mb-[10px]">
               حلول مبتكرة عبر منصة مركبتي
             </h2>
-            <p className="text-[#1D1E25] font-normal text-[19px] ">
+            <p className="text-[#1D1E25] font-normal md:text-[19px] text-[12px] ">
               منصة مركبتي تقدم حلولاً مبتكرة وفعالة تعالج مشاكل النقل والمواصلات
               عبر تقديم خدمات إلكترونية سهلة الوصول
             </p>
 
-            <ul className="flex flex-col gap-[35px] !mt-[45px]">
+            <ul className="flex flex-col gap-[20px] md:gap-[35px] !mt-[45px]">
               <li className="flex  gap-[15px]">
-                <div className="bg-[rgba(50,168,201,0.21)] w-[45px] h-[45px] flex justify-center items-center rounded-[10px]">
+                <div className="bg-[rgba(50,168,201,0.21)] md:w-[45px] md:h-[45px] w-[40px] h-[40px] flex justify-center items-center rounded-[10px]">
                   <Image
                     src="/assets/icons/user.svg"
                     alt="user"
-                    width={31}
-                    height={31}
+                    width={20}
+                    height={20}
                   />
                 </div>
 
                 <div className="flex flex-col  gap-[10px]">
-                  <h3 className="!text-[20px] !font-bold !text-[#192252]">
+                  <h3 className=" text-[14px] md:!text-[20px] !font-bold !text-[#192252]">
                     رخصة القيادة الإلكترونية
                   </h3>
-                  <p className="text-[#848FAC] text-[16px] !font-medium">
+                  <p className="text-[#848FAC] text-[12px] md:text-[16px] !font-medium">
                     تحسين كفاءة النقل والمواصلات عبر تقديم خدمات تقنية متطورة
                   </p>
                 </div>
               </li>
 
               <li className="flex  gap-[15px]">
-                <div className="bg-[rgba(50,168,201,0.21)] w-[45px] h-[45px] flex justify-center items-center rounded-[10px]">
+                <div className="bg-[rgba(50,168,201,0.21)] md:w-[45px] md:h-[45px] w-[40px] h-[40px] flex justify-center items-center  md:rounded-[10px]">
                   <Image
                     src="/assets/icons/user.svg"
                     alt="user"
-                    width={31}
-                    height={31}
+                    width={20}
+                    height={20}
                   />
                 </div>
 
@@ -168,19 +135,19 @@ export default function Home() {
 
       <section className=" md:px-[121px] mt-[50px]">
         <div className="flex flex-col items-center justify-center gap-[10px]">
-          <h2 className="!text-[50px] !font-bold !text-[#1F1F39]">
+          <h2 className="text-[30px] md:!text-[50px] !font-bold !text-[#1F1F39]">
             مزايا استخدام منصة <span className="text-[#32A8C9] !text-[50px] !font-bold"> مركبتي</span>
           </h2>
-          <p className="text-[#1F1F39] font-normal text-[20px] opacity-[50%] text-center m-auto  md:w-[58%]">
+          <p className="text-[#1F1F39] font-normal text-[14px] md:text-[20px] opacity-[50%] text-center m-auto  md:w-[58%]">
             منصة مركبتي تتميز بسهولة الاستخدام وتوفير الوقت للسائقين، مع تقديم
             أعلى درجات الشفافية في المعلومات، وتعزيزز السلامة على الطرقات.
           </p>
         </div>
 
         <Container className="py-[30px] bg-[#F7FDFF] mt-[50px] ">
-          <div className="grid grid-cols-3 gap-[50px]">
-            <div className="text-left">
-            <div className="bg-[rgba(50,168,201,0.21)] mb-[20px] mr-auto w-[71px] h-[71px] flex justify-center items-center rounded-[50%]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[50px]">
+            <div className="md:text-left">
+            <div className="bg-[rgba(50,168,201,0.21)] mb-[20px] md:mr-auto w-[71px] h-[71px] flex justify-center items-center rounded-[50%]">
 
               <img
                 src="/assets/icons/hand.svg"
@@ -196,7 +163,7 @@ export default function Home() {
                 الخدمات.
               </p>
             </div>
-            <div className="text-center row-span-2 flex items-center justify-center ">
+            <div className="hidden  text-center row-span-2 md:flex items-center justify-center ">
             <div className="relative w-[430px] h-[430px] bg-[rgba(208,245,255,0.49)] rounded-[50%] z-[1]">
             <img src="/assets/phone.png" alt="Phone" className=" z-2 absolute lg:top-[5%] xl:top-[-19%]" />
               </div>
@@ -218,8 +185,8 @@ export default function Home() {
                 الخدمات.
               </p>
             </div>
-            <div className="text-left">
-            <div className="bg-[rgba(50,168,201,0.21)] mb-[20px] mr-auto w-[71px] h-[71px] flex justify-center items-center rounded-[50%]">
+            <div className="md:text-left">
+            <div className="bg-[rgba(50,168,201,0.21)] mb-[20px] md:mr-auto w-[71px] h-[71px] flex justify-center items-center rounded-[50%]">
 
               <img
                 src="/assets/icons/time.svg"
@@ -275,12 +242,12 @@ export default function Home() {
       <section className="md:px-[121px] mt-[50px] ">
 
         <div className="flex flex-col items-center justify-center gap-[10px]">
-          <h2 className="!text-[#1D1E25] !text-[60px] !font-bold text-center">
+          <h2 className="!text-[#1D1E25] tex-[40px] md:!text-[60px] !font-bold text-center">
       منصة <span className="text-[#32A8C9] text-[50px] !font-bold"> مركبتي</span>    لكل فئات المجتمع
           </h2>
 
 
-          <p className="text-[#1F1F3980] opacity-[50%] text-[20px] font-normal text-center w-[50%] mx-auto !mb-[25px]">
+          <p className="text-[#1F1F3980] opacity-[50%] text-[14px] md:text-[20px] font-normal text-center md:w-[50%] mx-auto !mb-[25px]">
           منصة مركبتي مصممة لخدمة جميع فئات المجتمع من السائقين المحترفين الى طلاب الجامعات لتسهيل الوصول الى خدمات النقل بكفاءة وراحة
           </p>
         </div>
@@ -305,8 +272,8 @@ export default function Home() {
 
 
 
-      <section className=" py-[115px] md:px-[121px] mt-[50px] bg-[#F7FDFF]">
-        <h2 className="!text-[#1D1E25] !text-[60px] !font-bold text-center !mb-[60px]">الاسئلة الشائعة</h2>
+      <section className=" md:py-[115px] md:px-[121px] mt-[50px] bg-[#F7FDFF]">
+        <h2 className="!text-[#1D1E25] text-[30px] md:!text-[60px] !font-bold text-center md:!mb-[60px]">الاسئلة الشائعة</h2>
 
        <AccordionCustom />
       </section>

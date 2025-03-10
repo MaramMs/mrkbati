@@ -9,14 +9,14 @@ function Header() {
   return (
     <header className="mt-[50px]">
       <div className="flex flex-col items-center justify-center text-center ">
-        <h1 className="!font-bold  !text-[#1D1E25] !mb-[35px] text-[80px]">
-          <span className="font-bold text-[#32A8C9] text-[80px">
+        <h1 className="!font-bold  !text-[#1D1E25] md:!mb-[35px] md:text-[80px] text-[20px] !mb-[20px]">
+          <span className="font-bold text-[#32A8C9] text-[20px] md:text-[80px]">
             ثورة رقمية لقطاع النقل
           </span>
           <br />
           في الوطن العربي والشرق الأوسط
         </h1>
-        <p className="text-[#1D1E25] text-[20px] font-normal text-center w-[40%] mx-auto !mb-[40px]">
+        <p className="text-[#1D1E25] text-[14px]  md:text-[20px] font-normal text-center md:w-[40%] md:mx-auto md:!mb-[40px]">
           منصة مركبتي هي أول منصة رقمية متكاملة لحوسبة قطاع النقل والمواصلات.
           وتقديم خدمات متطورة تسهل حياة السائقين وتعزز كفاءة إدارة النقل.
         </p>

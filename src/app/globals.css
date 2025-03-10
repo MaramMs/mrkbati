@@ -67,6 +67,8 @@ body {
   justify-content: space-between !important;
   align-items: center !important;
   gap: 16px !important;
+  padding: 0px;
+  font-size: 13px;
 }
 
 .accordion-button::after {

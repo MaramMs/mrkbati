@@ -129,7 +129,7 @@ const SwiperCustom = () => {
           effect="coverflow"
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={3} // تغيير هنا
+          slidesPerView={2} // تغيير هنا
           spaceBetween={30} // إضافة مسافة
           loop={true}
           coverflowEffect={{
@@ -138,6 +138,14 @@ const SwiperCustom = () => {
             depth: 250,
             modifier: 1,
             slideShadows: false,
+          }}
+          breakpoints={{
+            320: {  
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3, 
+            },
           }}
           modules={[EffectCoverflow]}
           className="mySwiper"

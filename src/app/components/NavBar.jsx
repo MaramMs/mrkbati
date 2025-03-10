@@ -10,33 +10,34 @@ const NavBar = () => {
       expand="lg"
       className="px-[24px] lg:px-[140px] fixed top-0 left-0 w-full bg-white z-50 pb-[0px] "
     >
-      <Container className="flex flex-col gap-[10px]">
+      <Container className="flex md:flex-col gap-[10px]">
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
-          id="responsive-navbar-nav"
-          className="w-full flex  justify-between items-center"
-        >
-          <Nav className="flex gap-6 text-[16px] font-medium text-gray-700 rtl space-x-reverse">
-            <Nav.Link href="/" className="item active">
-              الرئيسية
-            </Nav.Link>
-            <Nav.Link href="/pricing" className="item">
-              ماذا نقدم
-            </Nav.Link>
-            <Nav.Link href="/faq" className="item">
-              الأسئلة الشائعة
-            </Nav.Link>
-            <Nav.Link href="/contact" className="item">
-              تواصل معنا
-            </Nav.Link>
-          </Nav>
+    id="responsive-navbar-nav"
+    className="w-full flex justify-between items-center"
+  >
+    <Nav className="flex gap-6 text-[16px] font-medium text-gray-700 rtl space-x-reverse">
+      <Nav.Link href="/" className="item active">
+        الرئيسية
+      </Nav.Link>
+      <Nav.Link href="/pricing" className="item">
+        ماذا نقدم
+      </Nav.Link>
+      <Nav.Link href="/faq" className="item">
+        الأسئلة الشائعة
+      </Nav.Link>
+      <Nav.Link href="/contact" className="item">
+        تواصل معنا
+      </Nav.Link>
+    </Nav>
+    <Nav className="hidden md:flex">
+      <Button className="login !font-bold hover:bg-[#197A8C] transition-all">
+        تسجيل الدخول
+      </Button>
+    </Nav>
+  
+  </Navbar.Collapse>
 
-          <Nav>
-            <Button className="login !font-bold hover:bg-[#197A8C] transition-all">
-              تسجيل الدخول
-            </Button>
-          </Nav>
-        </Navbar.Collapse>
         <div className="relative w-full flex flex-col items-center">
           <div className="relative w-full flex items-center">
             <div className="h-[2px] bg-gray-200 flex-grow"></div>
@@ -70,3 +71,6 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+
+

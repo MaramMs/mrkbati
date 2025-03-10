@@ -10,7 +10,7 @@ export default function CustomAccordion() {
   const toggleIcon = (key) => (activeKey === key ? "-" : "+");
 
   return (
-    <div className="container mx-auto max-w-[800px] w-full p-4 sm:p-6">
+    <div className="md:container md:mx-auto max-w-[800px] w-full p-4 sm:p-6">
     <Accordion activeKey={activeKey} onSelect={(key) => setActiveKey(key)}>
       {["1", "2", "3", "4"].map((item, index) => (
         <Accordion.Item
