@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from "./components/NavBar";
 
 
 const cairo = Cairo({ subsets: ["latin"], weight: ["300", "400", "700"] });
@@ -19,9 +20,9 @@ export default function RootLayout({ children }) {
       <body
       className={cairo.className}
 >      
-
+<NavBar />
         <Header />
-        <main className="className='lg:mb-[40px] pt-[111px] px-[24px] lg:px-[135px] flex min-h-screen flex-col  justify-between">
+        <main className="className='lg:mb-[40px] pt-[111px]   flex min-h-screen flex-col  justify-between">
         {children}
         </main>
        

@@ -18,7 +18,7 @@ export default function CustomAccordion() {
           eventKey={index.toString()}
           className="border-[1px] border-[#E5E5E5] rounded-[8px] mb-4"
         >
-          <Accordion.Header className="text-[#1D1E25] flex justify-between text-sm md:text-base">
+          <Accordion.Header className="!text-[#1D1E25] flex justify-between !text-[24px] !font-bold md:text-base">
             {item}- كيف يمكنني تقديم طلب للحصول على رخصة قيادة عبر المنصة؟
             <span
               className="me-2 inline-flex w-[40px] h-[40px] text-[#1D1E25] text-[12px] bg-[rgba(50, 168, 201, 0.2)] rounded-[4px] items-center justify-center"

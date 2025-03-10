@@ -8,63 +8,12 @@ import SwiperCustom from "./components/SwiperCustom";
 export default function Home() {
   return (
     <>
-      <section className="py-5">
-        {" "}
-        {/* إضافة padding علوي وسفلي */}
-        {/* <Container> */}
-        <div className="flex flex-col items-center justify-center text-center ">
-          {/* <Col md={10} className="text-center"> */}
-          <h1 className="!font-bold  !text-[#1D1E25] !mb-[35px] text-[80px]">
-            {" "}
-            {/* تعديل الأحجام والألوان */}
-            <span className="font-bold text-[#32A8C9] text-[80px">
-              ثورة رقمية لقطاع النقل
-            </span>
-            <br />
-            في الوطن العربي والشرق الأوسط
-          </h1>
-          <p className="text-[#1D1E25] text-[20px] font-normal text-center w-[40%] mx-auto !mb-[40px]">
-            منصة مركبتي هي أول منصة رقمية متكاملة لحوسبة قطاع النقل والمواصلات.
-            وتقديم خدمات متطورة تسهل حياة السائقين وتعزز كفاءة إدارة النقل.
-          </p>
-          <div className=" flex justify-center items-center gap-[28px]  m-auto">
-            <a
-              href="#"
-              className="bg-[#1D1E25] py-[10px] px-[22px] rounded-[8px]  border border-[#808D9E]"
-            >
-              <Image
-                src="/assets/appStore.svg"
-                alt="وصف الصورة"
-                width={155}
-                height={39}
-                layout="intrinsic"
-                objectFit="contain"
-              />
-            </a>
-            <a
-              href="#"
-              className="bg-[#1D1E25] py-[10px] px-[22px] rounded-[8px]  border border-[#808D9E]"
-            >
-              <Image
-                src="/assets/googleStore.svg"
-                alt="وصف الصورة"
-                width={155}
-                height={39}
-                layout="intrinsic"
-                objectFit="contain"
-              />
-            </a>
-          </div>
-          {/* </Col> */}
-        </div>
-        <div className="flex justify-center items-center">
-          <Image src="/assets/hero.png" width={1068} height={1082} />
-        </div>
-        {/* </Container> */}
-      </section>
+   
 
-      <section className="bg-[#F7FDFF] py-[115px] px-[121px]">
-        <Row>
+      <section className="bg-[#F7FDFF] pb-[114px] ">
+       <Container>
+
+       <Row>
           {/* <Col
             style={{
               // background: `url('/assets/g12.png')`,
@@ -214,9 +163,10 @@ export default function Home() {
             </ul>
           </Col>
         </Row>
+       </Container>
       </section>
 
-      <section className="pt-[115px] md:px-[121px] mt-[50px]">
+      <section className=" md:px-[121px] mt-[50px]">
         <div className="flex flex-col items-center justify-center gap-[10px]">
           <h2 className="!text-[50px] !font-bold !text-[#1F1F39]">
             مزايا استخدام منصة <span className="text-[#32A8C9] !text-[50px] !font-bold"> مركبتي</span>
@@ -262,8 +212,8 @@ export default function Home() {
               />
 
               </div>
-              <h3>توفير الوقت والجهد</h3>
-              <p>
+              <h3 className="!mb-[10px] !text-[#1F1F39] !text-[20px] !font-bold">تعزيز الشفافية</h3>
+              <p className="text-[#1F1F3980] text-opacity-[50%] text-[16px] leading-[36px]">
                 من خلال منصة مركبتي يمكنك توفير الوقت والجهد وسهولة الوصول لجميع
                 الخدمات.
               </p>
@@ -279,7 +229,7 @@ export default function Home() {
               />
 
               </div>
-              <h3 className="!mb-[10px] !text-[#1F1F39] !text-[20px] !font-bold">تعزيز الشفافية</h3>
+              <h3 className="!mb-[10px] !text-[#1F1F39] !text-[20px] !font-bold">توفير الوقت والجهد</h3>
               <p className="text-[#1F1F3980] text-opacity-[50%] text-[16px] leading-[36px]">
                 توفر منصتنا نظام متكامل وشفاف يتيح للسائقين متابعة معلوماتهم
                 بسهولة وثقة.
@@ -304,15 +254,20 @@ export default function Home() {
           </div>
         </Container>
 
-        <div className="text-center  flex flex-col !gap-[15px]">
-          <h2 className="text-[#1F1F39] font-bold text-[16px]">استمتع بمزايا مركبتي</h2>
+        <div className="text-center  flex flex-col !gap-[15px] mt-[30px] border-b border-b-[1px] border-b-[rgba(31,31,57,0.1)] pb-2">
+          <h2 className="text-[#1F1F39] !font-bold !text-[16px]">استمتع بمزايا مركبتي</h2>
 
-          <p className="text-[14px] font-normal text-[#1F1F3980] opacity-[50%]">
+          <p className="text-[14px] font-normal text-[rgba(31,31,57,0.5)] m-0">
             من خلال منصة مركبتي يمكنك التمتع بجميع المزايا التي نقدمها من خلال
             التطبيق الخاص فينا
           </p>
         </div>
       </section>
+
+
+
+
+
 
 
 

@@ -1,51 +1,59 @@
-'use client'
-import React from 'react'
-import { Button, Container } from 'react-bootstrap';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import '../styles/header.css'
-import Image from 'next/image';
+"use client";
+import React from "react";
+import { Button, Container } from "react-bootstrap";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import "../styles/header.css";
+import Image from "next/image";
 function Header() {
   return (
-<>
-      <Navbar collapseOnSelect expand="lg" className="px-[24px] lg:px-[135px] lg:h-[111px] fixed top-0 left-0 w-full bg-white z-50 ">
-        <Container>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav" className="w-full flex justify-between items-center">
-            
-            {/* القوائم */}
-            <Nav className="flex gap-6 text-[16px] font-medium text-gray-700 rtl space-x-reverse">
-              <Nav.Link href="/" className="item active">الرئيسية</Nav.Link>
-              <Nav.Link href="/pricing" className="item">ماذا نقدم</Nav.Link>
-              <Nav.Link href="/faq" className="item">الأسئلة الشائعة</Nav.Link>
-              <Nav.Link href="/contact" className="item">تواصل معنا</Nav.Link>
-            </Nav>
-
-            {/* زر تسجيل الدخول */}
-            <Nav>
-              <Button className="login !font-bold hover:bg-[#197A8C] transition-all">
-                تسجيل الدخول
-              </Button>
-            </Nav>
-
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-
-     
-      <div className="relative w-full flex flex-col items-center ">
-        <Container className="relative w-full flex justify-center items-center">
-        
-          <hr className="w-full border-t border-gray-[#E9ECF2] h-[2px]" />
-
-        
-          <div className="absolute px-2 border-[#E9ECF2] border-[2px] rounded-full z-[999] w-[50px] h-[50px] flex justify-center items-center ">
-            <Image src="/assets/logo.png" width={51} height={46} alt="Logo" />
-          </div>
-        </Container>
+    <header className="mt-[50px]">
+      <div className="flex flex-col items-center justify-center text-center ">
+        <h1 className="!font-bold  !text-[#1D1E25] !mb-[35px] text-[80px]">
+          <span className="font-bold text-[#32A8C9] text-[80px">
+            ثورة رقمية لقطاع النقل
+          </span>
+          <br />
+          في الوطن العربي والشرق الأوسط
+        </h1>
+        <p className="text-[#1D1E25] text-[20px] font-normal text-center w-[40%] mx-auto !mb-[40px]">
+          منصة مركبتي هي أول منصة رقمية متكاملة لحوسبة قطاع النقل والمواصلات.
+          وتقديم خدمات متطورة تسهل حياة السائقين وتعزز كفاءة إدارة النقل.
+        </p>
+        <div className=" flex justify-center items-center gap-[28px]  m-auto">
+          <a
+            href="#"
+            className="bg-[#1D1E25] py-[10px] px-[22px] rounded-[8px]  border border-[#808D9E]"
+          >
+            <Image
+              src="/assets/appStore.svg"
+              alt="وصف الصورة"
+              width={155}
+              height={39}
+              layout="intrinsic"
+              objectFit="contain"
+            />
+          </a>
+          <a
+            href="#"
+            className="bg-[#1D1E25] py-[10px] px-[22px] rounded-[8px]  border border-[#808D9E]"
+          >
+            <Image
+              src="/assets/googleStore.svg"
+              alt="وصف الصورة"
+              width={155}
+              height={39}
+              layout="intrinsic"
+              objectFit="contain"
+            />
+          </a>
+        </div>
       </div>
-    </>
-  )
+      <div className="flex justify-center items-start">
+        <Image src="/assets/hero.png" width={1139} height={1147} alt="hero image"/>
+      </div>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
