@@ -2,12 +2,10 @@ import { Cairo } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/NavBar";
 
-
 const cairo = Cairo({ subsets: ["latin"], weight: ["300", "400", "700"] });
-
 
 export const metadata = {
   title: "Create Next App",
@@ -17,15 +15,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
-      <body
-      className={cairo.className}
->      
-<NavBar />
+      <body className={cairo.className}>
+        <NavBar />
         <Header />
         <main className="className='lg:mb-[40px] pt-[111px]   flex min-h-screen flex-col  justify-between">
-        {children}
+          {children}
         </main>
-       
 
         <Footer />
       </body>

@@ -1,9 +1,5 @@
 "use client";
 import React from "react";
-import { Button, Container } from "react-bootstrap";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import "../styles/header.css";
 import Image from "next/image";
 function Header() {
   return (
@@ -50,7 +46,12 @@ function Header() {
         </div>
       </div>
       <div className="flex justify-center items-start">
-        <Image src="/assets/hero.png" width={1139} height={1147} alt="hero image"/>
+        <Image
+          src="/assets/hero.png"
+          width={1139}
+          height={1147}
+          alt="hero image"
+        />
       </div>
     </header>
   );
